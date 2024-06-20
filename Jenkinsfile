@@ -11,7 +11,7 @@ pipeline {
                 sh "kubectl apply -f frontend.yaml"
                 sh "kubectl get svc"
                 sh "sleep 60"
-                sh "kubectl get svc svc frontend"
+                sh "kubectl get svc frontend"
             }
         }
     }
